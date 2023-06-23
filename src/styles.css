@@ -1,0 +1,110 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400px;
+    color: #111111;
+    background-color: #c2dcf9;
+    position: relative;
+    margin: 0 auto;
+    
+}
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    background-color:#6a88b5;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 999;
+}
+
+input {
+    outline: none;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: box-shadow 0.3s ease, border-color 0.3s;
+}
+input:focus {
+    border-color: #39c0a1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+button {
+    height: 37px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #ffffff;
+    background-color:  #092542fa;
+    transition: box-shadow 0.3s ease, background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background-color: #52a6f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 0 auto;
+}
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px #bed9f5;
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.image {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto;
+    
+}
+.gallery_link {
+    transition: transform 400ms ease-out;
+}
+
+.gallery_link:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #bed9f5;
+}
